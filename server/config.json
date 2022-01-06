@@ -1,0 +1,8 @@
+{
+    "db": {
+        "dbHost":"localhost",
+        "dbName":"mmisdb",
+        "dbUser":"root",
+        "dbPassword":"900609"
+    }
+}

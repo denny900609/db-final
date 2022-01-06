@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="cache-control" content="no-cache"><!-- ... 清除快取 ... -->
+  <meta http-equiv="expires" content="0"> <!-- ... 清除快取 ... -->
+  <title>SA&D_C108156229王維之</title>
+  <!-- plugins:css -->
+  <link rel="stylesheet" href="../../vendors/feather/feather.css">
+  <link rel="stylesheet" href="../../vendors/ti-icons/css/themify-icons.css">
+  <link rel="stylesheet" href="../../vendors/css/vendor.bundle.base.css">
+  <!-- endinject -->
+  <!-- Plugin css for this page -->
+  <!-- End plugin css for this page -->
+  <!-- inject:css -->
+  <link rel="stylesheet" href="../../css/vertical-layout-light/style.css">
+  <!-- endinject -->
+  <link rel="shortcut icon" href="../../images/favicon.png" />
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="../../do/qs.min.js"></script>
+  <script type="module" src="../../do/index.js"></script>
+  <script type="module" src="../../do/showStartPage.js"></script>
+
+</head>
+
+<body>
+  <div class="container-scroller">
+    <!-- partial:partials/_navbar.html -->
+    <nav class="navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
+
+      <!--左上logo-->
+      <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">        
+        <a class="navbar-brand brand-logo mr-5" href="../../index.html"><img src="../../images/logo.svg" class="mr-2" alt="logo"/></a>
+        <a class="navbar-brand brand-logo-mini" href="../../index.html"><img src="../../images/logo-mini.svg" alt="logo"/></a>
+      </div>
+
+      <!--logo右邊功能-->
+      <div class="navbar-menu-wrapper d-flex align-items-center justify-content-end">
+
+        <!--縮小左邊菜單-->
+        <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
+          <span class="icon-menu"></span>
+        </button>
+
+        <!--搜尋欄-->
+        <ul class="navbar-nav mr-lg-2">
+          <li class="nav-item nav-search d-none d-lg-block">
+            <div class="input-group">
+              <div class="input-group-prepend hover-cursor" id="navbar-search-icon">
+                <span class="input-group-text" id="search">
+                  <i class="icon-search"></i>
+                </span>
+              </div>
+              <input type="text" class="form-control" id="navbar-search-input" placeholder="Search now" aria-label="search" aria-describedby="search">
+            </div>
+          </li>
+        </ul>
+        
+        <ul class="navbar-nav navbar-nav-right">
+
+          
+          
+          <!--個人資料開始-->
+          <li class="nav-item nav-profile dropdown">
+            
+            <a class="nav-link dropdown-toggle" id="UserDropdown" href="#" data-toggle="dropdown" aria-expanded="false">
+              <img class="img-xs rounded-circle" src="../../faces-clipart/pic-1.png" alt="Profile image"> </a>
+            <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="UserDropdown">
+              <div class="dropdown-header text-center">
+                <img class="img-md rounded-circle" src="../../faces-clipart/pic-1.png" alt="Profile image">
+                <p id = "dropdown-item-name" class="mb-1 mt-3 font-weight-semibold">Visitor</p>
+                <!-- <p class="font-weight-light text-muted mb-0">allenmoreno@gmail.com</p> -->
+              </div>
+              <a class="dropdown-item">My Profile</a>
+              <a id = 'Sign-statu' class="dropdown-item">Sign in</a>
+            </div>
+          </li>
+          
+          
+
+          <!--個人資料結束-->
+
+          
+
+        </ul>
+        
+        <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-toggle="offcanvas">
+          <span class="icon-menu"></span>
+        </button>
+        
+      </div>
+    </nav>
+    <!-- partial -->
+    <div class="container-fluid page-body-wrapper">
+      <!-- partial:partials/_settings-panel.html -->
+
+      <!--右下角齒輪-->
+      <div class="theme-setting-wrapper">
+        <div id="settings-trigger"><i class="ti-settings"></i></div>
+        <div id="theme-settings" class="settings-panel">
+          <i class="settings-close ti-close"></i>
+          <p class="settings-heading">SIDEBAR SKINS</p>
+          <div class="sidebar-bg-options selected" id="sidebar-light-theme"><div class="img-ss rounded-circle bg-light border mr-3"></div>Light</div>
+          <div class="sidebar-bg-options" id="sidebar-dark-theme"><div class="img-ss rounded-circle bg-dark border mr-3"></div>Dark</div>
+          <p class="settings-heading mt-2">HEADER SKINS</p>
+          <div class="color-tiles mx-0 px-4">
+            <div class="tiles success"></div>
+            <div class="tiles warning"></div>
+            <div class="tiles danger"></div>
+            <div class="tiles info"></div>
+            <div class="tiles dark"></div>
+            <div class="tiles default"></div>
+          </div>
+        </div>
+      </div>
+      <!--右下角齒輪-->
+      
+      
+      <!-- partial -->
+      <!-- partial:partials/_sidebar.html -->
+      
+      <!-- 左側菜單 開始 -->
+      <nav class="sidebar sidebar-offcanvas" id="sidebar">
+        <ul class="nav">
+
+          <!--初始頁-->
+          <li class="nav-item">
+            <a class="nav-link" href="../../index.html">
+              <i class="icon-grid menu-icon"></i>
+              <span class="menu-title">首頁</span>
+            </a>
+          </li>
+
+          <!--產品-->
+          <li class="nav-item">
+            <a class="nav-link" href="./product.html">
+              <i class="icon-paper menu-icon"></i>
+              <span class="menu-title">產品基本資料</span>
+            </a>
+          </li>
+          
+          <!--訂單-->
+          <li class="nav-item">
+            <a class="nav-link" href="./orderdetail.html">
+              <i class="icon-paper menu-icon"></i>
+              <span class="menu-title">訂單</span>
+            </a>
+          </li> 
+
+          <!--銷售報表-->
+          <li class="nav-item">
+            <a class="nav-link" href="./sales_report.html">
+              <i class="icon-paper menu-icon"></i>
+              <span class="menu-title">銷售報表</span>
+            </a>
+          </li> 
+
+          
+        </ul>
+      </nav>
+      <!-- 左側菜單 結束 -->
+
+      <!-- partial -->
+      
+      <!-- 中間面板 開始 -->
+      <div class="main-panel">
+
+        <!-- 主要內容 開始 -->
+        <div class="content-wrapper">
+          
+          <div class="row"> 
+            <div class="col-md-12 grid-margin" id="root"></div>
+          </div>
+
+            
+        </div>
+        <!-- 主要內容 結束 -->
+        <!-- content-wrapper ends -->
+        
+        <!-- partial:partials/_footer.html -->
+        <!-- 版權 -->
+        <footer class="footer">
+          <div class="d-sm-flex justify-content-center justify-content-sm-between">
+            <span class="text-muted text-center text-sm-left d-block d-sm-inline-block">Copyright © 2021.  Premium <a href="https://www.bootstrapdash.com/" target="_blank">Bootstrap admin template</a> from BootstrapDash. All rights reserved.</span>
+            <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center">Hand-crafted & made with <i class="ti-heart text-danger ml-1"></i></span>
+          </div>
+        </footer>
+        <!-- 版權 -->
+        <!-- partial -->
+        
+      </div>
+      <!-- 中間面板 結束 -->
+      <!-- main-panel ends -->
+    </div>
+    
+    <!-- page-body-wrapper ends -->
+  </div>
+  <!-- container-scroller -->
+
+  <!-- plugins:js -->
+  <script src="../../vendors/js/vendor.bundle.base.js"></script>
+  <!-- endinject -->
+  <!-- Plugin js for this page -->
+  <!-- End plugin js for this page -->
+  <!-- inject:js -->
+  <script src="../../js/off-canvas.js"></script>
+  <script src="../../js/hoverable-collapse.js"></script>
+  <script src="../../js/template.js"></script>
+  <script src="../../js/settings.js"></script>
+  <script src="../../js/todolist.js"></script>
+  <!-- endinject -->
+  <!-- Custom js for this page-->
+  <!-- End custom js for this page-->
+</body>
+
+</html>
